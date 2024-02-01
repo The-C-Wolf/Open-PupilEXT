@@ -88,7 +88,7 @@ void PuReST::run(const cv::Mat &frame, const cv::Rect &roi, Pupil &pupil, const 
     }
     else
     {
-        runTracking(frame, pupil, userMaxPupilDiameterPx, userMaxPupilDiameterPx);
+        runTracking(frame, pupil, userMinPupilDiameterPx, userMaxPupilDiameterPx);
     }
     previousPupil = pupil;
 }
